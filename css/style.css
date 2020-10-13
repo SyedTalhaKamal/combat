@@ -1,0 +1,656 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import '../fonts/fonts.css';
+body {
+  font-family: '';
+}
+
+/* ttt
+  font-family: 'Lucida Fax';
+  font-family: 'Segoe UI'
+  font-family: 'Segoe UI Emoji';
+  */
+
+/* header */
+
+.navbar-custom {
+  background-color: white !important;
+}
+
+#navBtn {
+  border-color: grey !important;
+  outline: none !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #1b2584 !important;
+}
+
+.navbar-custom a {
+  color: black !important;
+  font-family: 'Lucida Fax' !important;
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.navbar-custom li {
+  margin-left: 9px;
+}
+
+.navbar-custom a:hover {
+  color: #1b2584 !important;
+}
+
+.donateBtn {
+  background-color: #ec0000 !important;
+  color: white !important;
+  border: none;
+  padding: 18px 28px;
+  border-radius: 5px;
+  font-family: 'Segoe UI';
+  font-size: 18px;
+}
+
+.donateBtn:hover {
+  background-color: white !important;
+  color: #ec0000 !important;
+  border: 1px solid #ec0000;
+}
+
+/* Slider */
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.carousel-indicators .active {
+  background-color: #ec0000 !important;
+}
+
+.sliderText {
+  margin-bottom: -48px;
+  padding: 0px;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 48px;
+  width: 100%;
+}
+
+.bannerText {
+  background-color: rgba(27, 37, 129, 0.7);
+  color: white;
+  padding: 27px 16px 0px 9px;
+}
+
+.bannerSupport {
+  font-size: 51px;
+  font-family: 'Lucida Fax';
+  text-transform: uppercase;
+}
+
+.bannerResearch {
+  font-size: 51px;
+  font-family: 'Lucida Fax';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bannerInstitutions {
+  font-size: 47px;
+  font-family: 'Lucida Fax';
+  text-transform: uppercase;
+}
+
+.bannerLine1 {
+  width: 60%;
+  padding: 4px;
+  background-color: #ec0000;
+  position: relative;
+  right: 9px;
+}
+
+.bannerHope {
+  font-size: 51px;
+  font-family: 'Segoe UI Emoji';
+}
+
+.bannerLine2 {
+  width: 60%;
+  padding: 4px;
+  background-color: #ec0000;
+  position: relative;
+  left: 150px;
+}
+
+.bannerDonate {
+  font-size: 31px;
+  font-family: 'Lucida Fax';
+  font-weight: bold;
+  color: white;
+}
+
+.bannerDonate:hover {
+  color: #ec0000;
+}
+
+.removeLine:hover {
+  text-decoration: none;
+}
+
+/* Cancer */
+
+.cancerMain {
+  font-size: 33px;
+  font-family: 'Lucida Fax';
+  color: #363636;
+  font-weight: bold;
+}
+
+.cancerSub {
+  font-size: 55px;
+  color: #ff0000;
+  font-family: 'Lucida Fax';
+  font-weight: bold;
+}
+
+.cancerP {
+  color: #666666;
+  font-size: 15px;
+  font-family: 'Segoe UI Emoji';
+}
+
+.read {
+  background-color: #2734bc;
+  color: white;
+  border: 1px solid #2734bc;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.read:hover {
+  color: #2734bc;
+  background-color: white;
+  border: 1px solid #2734bc;
+  transition: 0.2s ease-in-out;
+}
+
+.form {
+  background-color: #ec0000;
+}
+
+.labels {
+  color: white;
+  font-size: 20px;
+  font-family: 'Lucida Fax';
+}
+
+.formLine {
+  width: 98%;
+  padding: 4px;
+  background-color: #2a36bd;
+}
+
+/* Gallery */
+
+.galleryBack {
+  background-color: #f8f4f4;
+}
+
+.galleryMain {
+  position: relative;
+  top: 4px;
+}
+
+.gallery1 {
+  width: 100%;
+  height: 100%;
+}
+
+.galleryPara {
+  background-color: #2734bc;
+  color: white;
+}
+
+.joinMain {
+  font-size: 35px;
+  font-family: 'Lucida Fax';
+  font-weight: bold;
+}
+
+.joinP {
+  font-size: 22px;
+  font-family: 'Segoe UI Emoji';
+}
+
+.read2 {
+  background-color: #ec0000;
+  color: white;
+  border: 1px solid #ec0000;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.read2:hover {
+  color: #ec0000;
+  background-color: white;
+  border: 1px solid #ec0000;
+  transition: 0.2s ease-in-out;
+}
+
+.research {
+  background-color: #ec0000;
+  color: white;
+}
+
+.research2 {
+  background-color: #2734bc;
+  color: white;
+}
+
+.researchH {
+  font-size: 25px;
+  font-family: 'Lucida Fax';
+  font-weight: bold;
+}
+
+.researchP {
+  font-size: 18px;
+  font-family: 'Segoe UI Emoji';
+}
+
+.read3 {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.read3:hover {
+  color: #ec0000;
+  background-color: white;
+  border: 1px solid black;
+  transition: 0.2s ease-in-out;
+}
+
+.chooseMain {
+  font-size: 30px;
+  font-family: 'Lucida Fax';
+  font-weight: bold;
+}
+
+.chooseP {
+  font-size: 18px;
+  color: #666666;
+  font-family: 'Segoe UI Emoji';
+}
+
+/* news */
+
+.newsBack {
+  background-color: #f8f4f4;
+}
+
+.newsMain {
+  color: #363636;
+  font-size: 30px;
+  font-family: 'Lucida Fax';
+  font-weight: bold;
+}
+
+.date {
+  color: #ec0000;
+  font-size: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+}
+
+.cardH {
+  color: #363636;
+  font-size: 20px;
+  font-family: 'Lucida Fax';
+  font-weight: bold;
+}
+
+.cardLine {
+  width: 70%;
+  padding: 1px;
+  background-color: #dddada
+}
+
+.cardP {
+  color: #666666;
+  font-size: 15px;
+  font-family: 'Segoe UI';
+}
+
+/* Work */
+
+/* footer */
+
+.footerBack {
+  background-color: #2734bc;
+  color: white;
+}
+
+.footerP {
+  font-size: 15px;
+  font-family: 'Segoe UI Emoji';
+}
+
+.footerH {
+  font-size: 20px;
+  font-family: 'Lucida Fax';
+  font-weight: bold;
+}
+
+.footerli a {
+  color: white;
+  font-size: 15px;
+  font-family: 'Segoe UI Emoji';
+}
+
+.contactInfo {
+  font-size: 15px;
+  font-family: 'Segoe UI Emoji';
+}
+
+.emailText {
+  border-radius: 0px;
+  border: none;
+}
+
+.sendBtn {
+  background-color: #ec0000;
+  color: white;
+  border: none;
+}
+
+.footerCopy {
+  font-size: 17px;
+  font-family: 'Segoe UI Emoji';
+}
+
+.socialIcons {
+  color: grey;
+  background: #ffffff;
+  border-radius: 100%;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  margin-right: 15px;
+}
+
+.socialIcons:hover {
+  color: white;
+  background: #f02317;
+  transition: 0.2s ease-in-out;
+}
+
+.footerLine {
+  background-color: #525dc9;
+  padding: 1px;
+  width: 96%;
+}
+
+@media (max-width:1199px) {
+  .navbar-custom a {
+    font-size: 13px !important;
+  }
+  .navbar-custom li {
+    margin-left: 0px;
+  }
+  .bannerText {
+    padding: -1px 16px 0px 9px;
+  }
+  .bannerSupport {
+    font-size: 35px;
+  }
+  .bannerResearch {
+    font-size: 35px;
+  }
+  .bannerInstitutions {
+    font-size: 31px;
+  }
+  .bannerLine1 {
+    right: 9px;
+  }
+  .bannerHope {
+    font-size: 32px;
+  }
+  .bannerLine2 {
+    left: 126px;
+  }
+  .bannerDonate {
+    font-size: 35px;
+  }
+}
+
+@media (max-width:991px) {
+  .bannerSupport {
+    font-size: 35px;
+  }
+  .bannerResearch {
+    font-size: 35px;
+  }
+  .bannerInstitutions {
+    font-size: 31px;
+  }
+  .bannerLine1 {
+    right: 9px;
+  }
+  .bannerHope {
+    font-size: 32px;
+  }
+  .bannerLine2 {
+    left: 94px;
+  }
+  .bannerDonate {
+    font-size: 35px;
+  }
+  .cancerMain {
+    font-size: 25px;
+  }
+  .cancerSub {
+    font-size: 40px;
+  }
+  .donateBtn {
+    padding: 14px 4px;
+  }
+}
+
+@media (max-width:767px) {
+  .bannerSupport {
+    font-size: 20px;
+  }
+  .bannerResearch {
+    font-size: 20px;
+  }
+  .bannerInstitutions {
+    font-size: 16px;
+  }
+  .bannerLine1 {
+    right: 9px;
+  }
+  .bannerHope {
+    font-size: 17px;
+  }
+  .bannerLine2 {
+    left: 94px;
+  }
+  .bannerDonate {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:480px) {
+  .bannerSupport {
+    font-size: 9px;
+  }
+  .bannerResearch {
+    font-size: 9px;
+  }
+  .bannerInstitutions {
+    font-size: 8px;
+  }
+  .bannerLine1 {
+    right: 9px;
+  }
+  .bannerHope {
+    font-size: 8px;
+  }
+  .bannerLine2 {
+    left: 41px;
+  }
+  .bannerDonate {
+    font-size: 9px;
+  }
+  .cancerMain {
+    font-size: 20px;
+  }
+  .cancerSub {
+    font-size: 28px;
+  }
+  .formLine {
+    width: 97%;
+  }
+  .logo {
+    width: 150px;
+  }
+}
